@@ -1,0 +1,56 @@
+:root {
+  /**
+   * LAVLI color pallete.
+   * All colors here share the same hue and saturation
+   */
+
+  --black: #151520;
+
+  /* Palette for LAVLI blue */
+  --lavli-blue: 220, 68%;
+  --blue-10: hsl(var(--lavli-blue), 10%);
+  --blue-20: hsl(var(--lavli-blue), 20%);
+  --blue-30: hsl(var(--lavli-blue), 30%);
+  --blue-40: hsl(var(--lavli-blue), 40%);
+  --blue-50: hsl(var(--lavli-blue), 50%);
+  --blue-60: hsl(var(--lavli-blue), 60%);
+  --blue-70: hsl(var(--lavli-blue), 70%);
+  --blue-80: hsl(var(--lavli-blue), 80%);
+  --blue-90: hsl(var(--lavli-blue), 90%);
+
+  /* Palette for LAVLI yellow */
+  --lavli-yellow: 47, 100%;
+  --yellow-10: hsl(var(--lavli-yellow), 10%);
+  --yellow-20: hsl(var(--lavli-yellow), 20%);
+  --yellow-30: hsl(var(--lavli-yellow), 30%);
+  --yellow-40: hsl(var(--lavli-yellow), 40%);
+  --yellow-50: hsl(var(--lavli-yellow), 50%);
+  --yellow-60: hsl(var(--lavli-yellow), 60%);
+  --yellow-70: hsl(var(--lavli-yellow), 70%);
+  --yellow-80: hsl(var(--lavli-yellow), 80%);
+  --yellow-90: hsl(var(--lavli-yellow), 90%);
+
+  /* Palette for LAVLI green */
+  --lavli-green: 113, 37%;
+  --green-10: hsl(var(--lavli-green), 10%);
+  --green-20: hsl(var(--lavli-green), 20%);
+  --green-30: hsl(var(--lavli-green), 30%);
+  --green-40: hsl(var(--lavli-green), 40%);
+  --green-50: hsl(var(--lavli-green), 50%);
+  --green-60: hsl(var(--lavli-green), 60%);
+  --green-70: hsl(var(--lavli-green), 70%);
+  --green-80: hsl(var(--lavli-green), 80%);
+  --green-90: hsl(var(--lavli-green), 90%);
+
+  /* Palette for LAVLI red */
+  --lavli-red: 6, 70%;
+  --red-10: hsl(var(--lavli-red), 10%);
+  --red-20: hsl(var(--lavli-red), 20%);
+  --red-30: hsl(var(--lavli-red), 30%);
+  --red-40: hsl(var(--lavli-red), 40%);
+  --red-50: hsl(var(--lavli-red), 50%);
+  --red-60: hsl(var(--lavli-red), 60%);
+  --red-70: hsl(var(--lavli-red), 70%);
+  --red-80: hsl(var(--lavli-red), 80%);
+  --red-90: hsl(var(--lavli-red), 90%);
+}

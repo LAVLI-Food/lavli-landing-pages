@@ -1,0 +1,14 @@
+#
+# Custom headers
+#
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "SAMEORIGIN"
+X-XSS-Protection = "0"
+X-DNS-Prefetch-Control = "on"
+Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+X-Content-Type-Options = "nosniff"
+Content-Security-Policy = "frame-ancestors 'self'"
+Referrer-Policy = "no-referrer"
