@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script';
 import Head from 'next/head';
 import Button from 'components/button';
 import heroPic from '@/public/images/hero_business.jpg';
@@ -243,7 +244,7 @@ const Testimonial = () => (
             <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
               <Image
                 className="rounded-xl object-cover lg:h-full lg:w-full"
-                src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                src="/images/thomas_schiffelmann.jpg"
                 alt=""
                 layout="fill"
               />
@@ -262,7 +263,10 @@ const Testimonial = () => (
                   <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                 </svg>
                 <p className="mt-6 text-2xl text-light">
-                  Wir sind Teil der LAVLI Family, ...
+                  Wir sind Teil der LAVLI Family, weil wir von dem Konzept der
+                  „Solidarischen Lebensmittelversorgung“ überzeugt sind, und
+                  dieses im Zuge der zunehmenden Ressourcenknappheit ein
+                  essentieller Bestandteil der Nahrungssicherheit wird.
                 </p>
               </div>
               <footer className="mt-6">
@@ -356,6 +360,7 @@ export default function LpLAVLIBusiness() {
           href="https://lp.lavli.org/business"
           key="canonical"
         />
+        <Script src="https://5f3c395.ccm19.de/app/public/app.js?apiKey=a6f7d4fbed46ce5604a866f1a12ab65bdc13203b28ec04ef&amp;domain=d62928c" />
       </Head>
       <PageHeader ctaClicked={() => ctaClicked()} />
       <Main className="bg-gray-50">
