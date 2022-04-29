@@ -337,6 +337,7 @@ export default function LpLAVLIBusiness() {
 
   return (
     <>
+      <Script src="https://5f3c395.ccm19.de/app/public/app.js?apiKey=a6f7d4fbed46ce5604a866f1a12ab65bdc13203b28ec04ef&amp;domain=d62928c" />
       <Head>
         <title>LAVLI Business</title>
         <meta
@@ -360,7 +361,6 @@ export default function LpLAVLIBusiness() {
           href="https://lp.lavli.org/business"
           key="canonical"
         />
-        <Script src="https://5f3c395.ccm19.de/app/public/app.js?apiKey=a6f7d4fbed46ce5604a866f1a12ab65bdc13203b28ec04ef&amp;domain=d62928c" />
       </Head>
       <PageHeader ctaClicked={() => ctaClicked()} />
       <Main className="bg-gray-50">
