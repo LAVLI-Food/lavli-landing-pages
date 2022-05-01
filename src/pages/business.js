@@ -54,43 +54,69 @@ const values = [
 
 const details = [
   {
-    name: 'Was ist LAVLI, was LAVLI Business?',
+    name: 'Was ist LAVLI, was LAVLI for Business?',
     description: `
       <p>
         LAVLI ist ein fairer, gemeinschaftsgetragener und
         innovativer Lebensmittelhandel, der auf Solidarität zwischen Erzeugern
-        und Verbrauchern basiert. Deshalb dürfen bei LAVLI nur Mitglieder
-        einkaufen. Erzeuger sollen für gesunde Lebensmittel sorgen, die
-        Verbraucher sichern im Gegenzug deren Existenz.
+        und Verbrauchern basiert. Deshalb kaufen bei LAVLI nur Mitglieder ein.
+        Erzeuger sorgen für gesunde Lebensmittel und die Verbraucher sichern
+        durch ihren Einkauf deren Existenz.
       </p>
       <p style="margin-top: 16px">
-        LAVLI Business ist unser Angebot, mit dem Gewerbetreibende, Unternehmen
-        oder Institutionen auch Teil der LAVLI Family werden können. So
-        unterstützen Sie uns dabei, eine regionale, nachhaltige und resiliente
-        Lebensmittelversorgung aufzubauen.
+        LAVLI for Business ist unser Angebot, mit dem Unternehmen, Vereine,
+        Behören oder andere Organisationen Teil der LAVLI Family werden können.
+        So unterstützen auch Sie eine regionale, nachhaltige und resiliente
+        Lebensmittelversorgung.
       </p>`,
     icon: InformationCircleIcon,
   },
   {
-    name: 'Wie funktioniert LAVLI Business?',
+    name: 'Wie funktioniert LAVLI for Business?',
     description: `
       <p>
-        Sie können zum Beispiel im Rahmen eines Mitarbeiterprogramms die
-        LAVLI Mitgliedschaften Ihrer Mitarbeiter subventioneren.
-        Oder vielleicht möchten Sie sich regelmäßig LAVLI Food für die
-        Büroverpflegung bringen lassen. Das Gemeinwohl-Forum Fischbachau
-        beliefern wir zum Beispiel bei Veranstaltungen.
+        Wir bieten Ihnen verschiedene Arten der Kooperation an, zum Beispiel:
       </p>
+      <ul style="margin-top: 16px; list-style: square; padding-left: 1em">
+        <li>
+          <span style="font-weight: 800">Mitarbeiterprogramm:</span> Im Rahmen
+          eines Mitarbeiterprogramms können Sie LAVLI Mitgliedschaften Ihrer
+          Mitarbeiterinnen und Mitarbeiter mitfinanzieren.
+        </li>
+        <li>
+          <span style="font-weight: 800">Büroverpflegung:</span> Mit LAVLI
+          können Sie sich regelmäßig eine gesunde Büroverpflegung liefern
+          lassen. So fördern Sie nicht nur die Gesundheit Ihrer Belegschaft am
+          Arbeitsplatz, sondern auch das Miteinander durch gemeinsame
+          Mahlzeiten.
+        </li>
+        <li>
+          <span style="font-weight: 800">Veranstaltungen:</span> Ob Konferenz,
+          ein besonderes Kundenmeeting, Tag der offenen Tür oder die nächste
+          Betriebsfeier – wir unterstützen Sie gerne bei der Versorgung Ihrer
+          Veranstaltung. Ein konkretes Beispiel: Das Gemeinwohl-Forum in
+          Fischbachau – eine zweitägiges Seminar – haben wir mit allen
+          Mahlzeiten ausgestattet.
+        </li>
+        <li>
+          <span style="font-weight: 800">Besondere Anlässe:</span> Es gibt
+          sicherlich viele weitere Anlässe in Ihrem Betriebsalltag zu denen
+          LAVLI einen wertvollen Beitrag leisten kann. Zum Beispiel als
+          Gewinnspiel oder Verlosung einer LAVLI Jahresmitgliedschaft, als
+          besondere Bonus-Komponente oder kleine Präsente für Ihre Kundinnen
+          und Kunden – nicht nur zu Weihnachten oder bei Jubiläen.
+        </li>
+      </ul>
       <p style="margin-top: 16px">
-        Die Möglichkeiten
-        sind vielfältig. Sprechen Sie uns daher einfach an, wenn Sie
-        Interesse an einer Kooperation haben. Wir würden uns freuen, von
-        Ihnen zu hören.
+        Die Möglichkeiten sind vielfältig. Gerne überlegen wir gemeinsam
+        mit Ihnen, welche Form der Kooperation für Sie passend ist und
+        entwickeln eine maßgeschneiderte Lösung. Sprechen Sie uns gerne an.
+        Wir freuen uns, mit Ihnen zusammenzuarbeiten.
       </p>`,
     icon: QuestionMarkCircleIcon,
   },
   {
-    name: 'Warum gibt es LAVLI Business?',
+    name: 'Warum gibt es LAVLI for Business?',
     description: `
       <p style="font-style: italic; font-weight: 800">
         „Food is the single strongest lever to optimize human health and
@@ -98,12 +124,12 @@ const details = [
         — EAT-Lancet Commission —
       </p>
       <p style="margin-top: 16px">
-        Die Art und Weise wie wir Nahrungsmittel produzieren und
-        welche Lebensmittel wir konsumieren hat entscheidenden Einfluss auf
-        unsere Umwelt, unser Klima und unsere Gesundheit. Die Art und Weise wie
-        wir das heute in der Regel tun, wird jedoch nicht in der Lage sein,
-        die Menschheit in Zukunft zu ernähren ohne gleichzeitig unsere Umwelt
-        und unsere Lebensgrundlagen zu zerstören.
+        Die Art und Weise wie wir Nahrungsmittel produzieren und welche
+        Lebensmittel wir konsumieren hat einen entscheidenden Einfluss auf
+        unsere Umwelt, unser Klima und unsere Gesundheit. Mit der heutigen
+        Ernährungsweise werden wir jedoch nicht in der Lage sein, die
+        Menschheit in Zukunft zu ernähren, ohne gleichzeitig unsere Umwelt und
+        unsere Lebensgrundlagen zu zerstören.
       </p>
       <p style="margin-top: 16px">
         Wir alle tragen eine Verantwortung für unseren Planeten und die nächsten
@@ -112,12 +138,11 @@ const details = [
     icon: LightBulbIcon,
   },
   {
-    name: 'Wo gibt es LAVLI Business?',
+    name: 'Wo gibt es LAVLI for Business?',
     description: `
       <p>
-        LAVLI Business bieten wir aktuell für Gewerbetreibende,
-        Unternehmen und Institutionen im 25 km Radius um unseren LAVLI
-        Standort Weyarn an.
+        LAVLI for Business bieten wir aktuell für Unternehmen, Vereine, Behörden
+        und andere Organisationen im Umkreis unseres LAVLI Standorts Weyarn an.
       </p>`,
     icon: LocationMarkerIcon,
   },
@@ -167,11 +192,11 @@ const Hero = () => (
       <div className="mx-auto w-full max-w-7xl pt-16 pb-20 lg:py-48 lg:text-left">
         <div className="px-4 sm:px-6 lg:w-1/2 lg:px-8 lg:pr-16 2xl:pl-0">
           <h1 className="mt-3 text-4xl font-extrabold tracking-wide sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            LAVLI Business
+            LAVLI for Business
           </h1>
           <p className="mt-3 max-w-md text-lg sm:text-xl md:mt-5 md:max-w-3xl">
             Maßgeschneiderte Versorgungs- und Kooperationslösungen für
-            Gewerbetreibende, Unternehmen und Institutionen.
+            Unternehmen, Vereine, Behörden und andere Organisationen.
           </p>
 
           <div className="mt-6">
@@ -197,7 +222,7 @@ const Details = () => (
     <div className="main-section-inner">
       <div className="lg:text-center">
         <h2 className="text-base font-extrabold uppercase tracking-wide text-dark-medium">
-          LAVLI Business
+          LAVLI for Business
         </h2>
         <h1
           id="details-heading"
@@ -207,9 +232,11 @@ const Details = () => (
       </div>
 
       <div className="mt-10">
-        <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-14 md:space-y-0">
+        <dl className="space-y-10 lg:grid lg:grid-cols-2 lg:gap-6 lg:space-y-0">
           {details.map((detail) => (
-            <div key={detail.name} className="relative">
+            <div
+              key={detail.name}
+              className="relative rounded-lg border border-gray-100 bg-white p-6 drop-shadow-sm">
               <dt>
                 <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-brand-orange-light text-dark-medium">
                   <detail.icon className="h-6 w-6" aria-hidden="true" />
@@ -339,16 +366,16 @@ export default function LpLAVLIBusiness() {
     <>
       <Script src="https://5f3c395.ccm19.de/app/public/app.js?apiKey=a6f7d4fbed46ce5604a866f1a12ab65bdc13203b28ec04ef&amp;domain=d62928c" />
       <Head>
-        <title>LAVLI Business</title>
+        <title>LAVLI for Business</title>
         <meta
           name="description"
-          content="Maßgeschneiderte Versorgungs- und Kooperationslösungen für Gewerbetreibende, Unternehmen und Institutionen."
+          content="Maßgeschneiderte Versorgungs- und Kooperationslösungen für Unternehmen, Vereine, Behörden und andere Organisationen."
           key="description"
         />
-        <meta property="og:title" content="LAVLI Business" key="og-title" />
+        <meta property="og:title" content="LAVLI for Business" key="og-title" />
         <meta
           property="og:description"
-          content="Maßgeschneiderte Versorgungs- und Kooperationslösungen für Gewerbetreibende, Unternehmen und Institutionen."
+          content="Maßgeschneiderte Versorgungs- und Kooperationslösungen für Unternehmen, Vereine, Behörden und andere Organisationen."
           key="og-description"
         />
         <meta
