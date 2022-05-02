@@ -31,6 +31,12 @@ So in practice for this changelog, increment the:
 
 ## [Unreleased]
 
+## [1.2.0] – 2022-05-02
+
+### Changed
+
+- Space between list items
+
 ## [1.1.0] – 2022-05-02
 
 ### Changed
