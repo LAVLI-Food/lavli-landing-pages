@@ -100,7 +100,7 @@ const details = [
         </li>
         <li>
           <span style="font-weight: 800">Besondere Anlässe:</span> Es gibt
-          sicherlich viele weitere Anlässe in Ihrem Betriebsalltag zu denen
+          sicherlich viele weitere Anlässe in Ihrem Betriebsalltag, zu denen
           LAVLI einen wertvollen Beitrag leisten kann. Zum Beispiel als
           Gewinnspiel oder Verlosung einer LAVLI Jahresmitgliedschaft, als
           besondere Bonus-Komponente oder kleine Präsente für Ihre Kundinnen
@@ -191,11 +191,9 @@ const Hero = () => (
 
       <div className="mx-auto w-full max-w-7xl pt-16 pb-20 lg:py-48 lg:text-left">
         <div className="px-4 sm:px-6 lg:w-1/2 lg:px-8 lg:pr-16 2xl:pl-0">
-          <h1 className="mt-3 text-4xl font-extrabold tracking-wide sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            LAVLI for Business
-          </h1>
-          <p className="mt-3 max-w-md text-lg sm:text-xl md:mt-5 md:max-w-3xl">
-            Maßgeschneiderte Versorgungs- und Kooperationslösungen für
+          <h1 className="h1">LAVLI for Business</h1>
+          <p className="mt-3 max-w-md text-lg sm:text-xl md:mt-5 md:max-w-prose">
+            Maßgeschneiderte Lebensmittelversorgung und Kooperationslösungen für
             Unternehmen, Vereine, Behörden und andere Organisationen.
           </p>
 
@@ -221,12 +219,8 @@ const Details = () => (
     aria-labelledby="details-heading">
     <div className="main-section-inner">
       <div className="lg:text-center">
-        <h2 className="text-base font-extrabold uppercase tracking-wide text-dark-medium">
-          LAVLI for Business
-        </h2>
-        <h1
-          id="details-heading"
-          className="mt-2 text-3xl font-extrabold leading-8 tracking-wide sm:text-4xl">
+        <h2 className="section-kicker">LAVLI for Business</h2>
+        <h1 id="details-heading" className="section-h1 mt-2">
           Werden Sie Teil der LAVLI Family
         </h1>
       </div>
@@ -316,17 +310,19 @@ const Testimonial = () => (
 const OurValues = () => (
   <section className="main-section" aria-labelledby="our-values-heading">
     <div className="main-section-inner">
-      <h1 id="our-values-heading" className="h1">
+      <h1 id="our-values-heading" className="section-h1">
         Passen wir zusammen?
       </h1>
       <ul
         role="list"
-        className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {values.map((value) => (
           <li
             key={value.title}
             className="col-span-1 flex flex-col divide-y divide-gray-100 rounded-lg bg-blue-40 text-light drop-shadow-lg">
-            <h2 className="h2 p-6 pb-1 text-center">{value.title}</h2>
+            <h2 className="p-6 pb-4 text-center text-2xl font-extrabold tracking-wide lg:text-3xl">
+              {value.title}
+            </h2>
             <div
               className="p-6 text-lg"
               dangerouslySetInnerHTML={{ __html: value.text }}
@@ -342,7 +338,7 @@ const OurValues = () => (
 const CTA = ({ onClick }) => (
   <section className="main-section bg-brand-orange-light">
     <div className="main-section-inner lg:flex lg:items-center lg:justify-between">
-      <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
+      <h1 className="text-2xl font-extrabold sm:text-3xl xl:text-4xl">
         <span className="block">Interesse?</span>
         <span className="block">Wir freuen uns auf Ihre Anfrage.</span>
       </h1>
