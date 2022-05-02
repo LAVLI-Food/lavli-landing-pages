@@ -285,9 +285,10 @@ const Testimonial = () => (
                 </svg>
                 <p className="mt-6 text-2xl text-light">
                   Wir sind Teil der LAVLI Family, weil wir von dem Konzept der
-                  „Solidarischen Lebensmittelversorgung“ überzeugt sind, und
-                  dieses im Zuge der zunehmenden Ressourcenknappheit ein
-                  essentieller Bestandteil der Nahrungssicherheit wird.
+                  „Solidarischen Landwirtschaft und Lebensmittelversorgung“
+                  überzeugt sind, und dieses im Zuge der zunehmenden
+                  Ressourcenknappheit ein essentieller Bestandteil der
+                  Nahrungssicherheit wird.
                 </p>
               </div>
               <footer className="mt-6">
