@@ -40,7 +40,7 @@ export default function GetInTouch() {
               </h3>
               <a
                 className="text-link"
-                href="mailto:hallo@lavli.org?subject=Anfrage%20LAVLI%20Business">
+                href="mailto:hallo@lavli.org?subject=Anfrage%20LAVLI%20for%20Business">
                 hallo@lavli.org
               </a>
             </div>
