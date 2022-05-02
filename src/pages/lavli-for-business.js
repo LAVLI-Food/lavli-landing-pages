@@ -66,7 +66,7 @@ const details = [
       </p>
       <p style="margin-top: 16px">
         LAVLI for Business ist unser Angebot, mit dem Unternehmen, Vereine,
-        Behören oder andere Organisationen Teil der LAVLI Family werden können.
+        Behörden oder andere Organisationen Teil der LAVLI Family werden können.
         So unterstützen auch Sie eine regionale, nachhaltige und resiliente
         Lebensmittelversorgung.
       </p>`,
@@ -226,22 +226,25 @@ const Details = () => (
         </h1>
       </div>
 
-      <div className="mt-10">
-        <dl className="space-y-10 lg:grid lg:grid-cols-2 lg:gap-6 lg:space-y-0">
+      <div className="mt-20">
+        <dl className="space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:gap-y-12 lg:space-y-0">
           {details.map((detail) => (
             <div
               key={detail.name}
-              className="relative rounded-lg border border-gray-100 bg-white p-6 drop-shadow-sm">
+              className="relative rounded-lg bg-gray-100 p-6 pt-12">
               <dt>
-                <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-brand-orange-light text-dark-medium">
-                  <detail.icon className="h-6 w-6" aria-hidden="true" />
+                <div className="absolute -mt-[4.5rem] inline-flex items-center justify-center rounded-md  bg-brand-orange-light p-3 shadow-lg">
+                  <detail.icon
+                    className="h-6 w-6 text-dark"
+                    aria-hidden="true"
+                  />
                 </div>
-                <p className="ml-16 text-xl font-extrabold leading-6 tracking-wide">
+                <p className="text-2xl font-extrabold leading-6 tracking-wide">
                   {detail.name}
                 </p>
               </dt>
               <dd
-                className="mt-2 ml-16 text-lg text-dark-medium"
+                className="mt-4 text-lg"
                 dangerouslySetInnerHTML={{ __html: detail.description }}
               />
             </div>
@@ -321,7 +324,7 @@ const OurValues = () => (
         {values.map((value) => (
           <li
             key={value.title}
-            className="col-span-1 flex flex-col divide-y divide-gray-100 rounded-lg bg-blue-40 text-light drop-shadow-lg">
+            className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-gray-100">
             <h2 className="p-6 pb-4 text-center text-2xl font-extrabold tracking-wide lg:text-3xl">
               {value.title}
             </h2>
