@@ -31,7 +31,9 @@ So in practice for this changelog, increment the:
 
 ## [Unreleased]
 
-## [1.0.0] – 2022-xx-xx
+## [1.0.0] – 2022-05-02
+
+- Go live v1.0.0
 
 ### Added
 
