@@ -84,14 +84,14 @@ const details = [
           eines Mitarbeiterprogramms können Sie LAVLI Mitgliedschaften Ihrer
           Mitarbeiterinnen und Mitarbeiter mitfinanzieren.
         </li>
-        <li>
+        <li style="margin-top: 16px">
           <span style="font-weight: 800">Büroverpflegung:</span> Mit LAVLI
           können Sie sich regelmäßig eine gesunde Büroverpflegung liefern
           lassen. So fördern Sie nicht nur die Gesundheit Ihrer Belegschaft am
           Arbeitsplatz, sondern auch das Miteinander durch gemeinsame
           Mahlzeiten.
         </li>
-        <li>
+        <li style="margin-top: 16px">
           <span style="font-weight: 800">Veranstaltungen:</span> Ob Konferenz,
           ein besonderes Kundenmeeting, Tag der offenen Tür oder die nächste
           Betriebsfeier – wir unterstützen Sie gerne bei der Versorgung Ihrer
@@ -99,7 +99,7 @@ const details = [
           Fischbachau – eine zweitägiges Seminar – haben wir mit allen
           Mahlzeiten ausgestattet.
         </li>
-        <li>
+        <li style="margin-top: 16px">
           <span style="font-weight: 800">Besondere Anlässe:</span> Es gibt
           sicherlich viele weitere Anlässe in Ihrem Betriebsalltag, zu denen
           LAVLI einen wertvollen Beitrag leisten kann. Zum Beispiel als
