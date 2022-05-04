@@ -31,6 +31,12 @@ So in practice for this changelog, increment the:
 
 ## [Unreleased]
 
+## [1.3.0] – 2022-05-04
+
+### Changed
+
+- Testimonial image
+
 ## [1.2.0] – 2022-05-02
 
 ### Changed
