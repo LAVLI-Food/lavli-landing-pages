@@ -1,5 +1,5 @@
 import { Transition } from '@headlessui/react';
-import '@/styles/globals.css';
+import 'styles/globals.css';
 
 export default function LavliLanding({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
