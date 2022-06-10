@@ -31,6 +31,12 @@ So in practice for this changelog, increment the:
 
 ## [Unreleased]
 
+## [1.4.0] – 2022-06-10
+
+### Added
+
+- Links to other LAVLI sites.
+
 ## [1.3.0] – 2022-05-04
 
 ### Changed
