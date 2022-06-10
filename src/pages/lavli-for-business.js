@@ -7,9 +7,9 @@ import Button from 'components/button';
 import heroPic from '@/public/images/hero_business.jpg';
 import {
   ArrowDownIcon,
-  ExternalLinkIcon,
   LightBulbIcon,
   LocationMarkerIcon,
+  ShoppingCartIcon,
 } from '@heroicons/react/outline';
 import {
   InformationCircleIcon,
@@ -18,6 +18,7 @@ import {
 import Modal from 'components/modal';
 import GetInTouch from 'components/get-in-touch';
 import Header from 'components/header';
+import MobileMenu from 'components/mobile-menu';
 import Main from 'components/main';
 import Footer from 'components/footer';
 import GTM from 'components/gtm';
@@ -149,16 +150,70 @@ const details = [
   },
 ];
 
-const PageHeader = ({ ctaClicked }) => {
+/* The LP <MobileMenu> component */
+const PageMobileMenu = ({ mobileMenuOpen, setMobileMenuOpen }) => {
   const navSecondary = (
     <>
       <a
         href="https://www.lavli.org"
-        target="_blank"
+        rel="noreferrer"
+        className="group flex w-full items-center space-x-1 rounded-md p-2 text-sm hover:bg-blue-90">
+        <span>LAVLI Website</span>
+      </a>
+      <a
+        href="https://app.lavli.org"
+        rel="noreferrer"
+        className="group flex w-full items-center space-x-1 rounded-md p-2 text-sm hover:bg-blue-90">
+        <span>LAVLI Mitgliederportal</span>
+      </a>
+
+      <a
+        href="https://app.lavli.org/shop"
+        rel="noreferrer"
+        className="group flex w-full items-center rounded-md p-2 text-sm hover:bg-blue-90">
+        <ShoppingCartIcon className="mr-1 h-4 w-4" aria-hidden="true" />
+        <span>Online-Shop Weyarn</span>
+      </a>
+    </>
+  );
+
+  return (
+    <MobileMenu
+      slotNavSecondary={navSecondary}
+      mobileMenuOpen={mobileMenuOpen}
+      setMobileMenuOpen={setMobileMenuOpen}
+    />
+  );
+};
+
+/* The LP <Header> component */
+const PageHeader = ({ setMobileMenuOpen, ctaClicked }) => {
+  const title = (
+    <span className="font-extrabold tracking-wider text-dark-medium">
+      LAVLI for Business
+    </span>
+  );
+
+  const navSecondary = (
+    <>
+      <a
+        href="https://www.lavli.org"
         rel="noreferrer"
         className="inline-flex items-center space-x-1 text-sm text-dark-medium hover:text-dark">
         <span>LAVLI Website</span>
-        <ExternalLinkIcon className="h-4 w-4" />
+      </a>
+      <a
+        href="https://app.lavli.org"
+        rel="noreferrer"
+        className="inline-flex items-center space-x-1 text-sm text-dark-medium hover:text-dark">
+        <span>LAVLI Mitgliederprotal</span>
+      </a>
+      <a
+        href="https://app.lavli.org/shop"
+        rel="noreferrer"
+        className="flex items-center text-sm text-dark-medium hover:text-dark">
+        <ShoppingCartIcon className="mr-1 h-5 w-5" aria-hidden="true" />
+        <span>Online-Shop Weyarn</span>
       </a>
     </>
   );
@@ -167,17 +222,18 @@ const PageHeader = ({ ctaClicked }) => {
 
   return (
     <Header
-      logoHref="/"
+      logoHref="#top"
       slotNavSecondary={navSecondary}
       slotActions={actions}
-      //openMobileMenu={() => setMobileMenuOpen(true)}
+      slotTitle={title}
+      openMobileMenu={() => setMobileMenuOpen(true)}
     />
   );
 };
 
 /* The LP <Hero> component */
 const Hero = () => (
-  <section>
+  <section id="top">
     <div className="lg:relative">
       <div className="relative h-64 w-full sm:block sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
         <div className="absolute inset-0 h-full w-full">
@@ -358,6 +414,7 @@ const CTA = ({ onClick }) => (
 
 export default function LpLAVLIBusiness() {
   const [showModal, setShowModal] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const ctaClicked = () => {
     setShowModal(true);
@@ -391,7 +448,14 @@ export default function LpLAVLIBusiness() {
         />
       </Head>
       <GTM />
-      <PageHeader ctaClicked={() => ctaClicked()} />
+      <PageMobileMenu
+        mobileMenuOpen={mobileMenuOpen}
+        setMobileMenuOpen={setMobileMenuOpen}
+      />
+      <PageHeader
+        ctaClicked={() => ctaClicked()}
+        setMobileMenuOpen={setMobileMenuOpen}
+      />
       <Main className="bg-gray-50">
         <div className="snap-y">
           <Hero />

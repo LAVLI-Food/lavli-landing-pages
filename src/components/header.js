@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-// import { MenuIcon } from '@heroicons/react/outline';
-import { Popover } from '@headlessui/react';
+import { MenuIcon } from '@heroicons/react/outline';
 
 /* The <Header> component */
 export default function Header({
@@ -12,7 +11,7 @@ export default function Header({
   slotNavSecondary,
   slotNavPrimary,
   slotActions,
-  // openMobileMenu,
+  openMobileMenu,
 }) {
   /**
    * Returns the <Header> React element.
@@ -22,20 +21,22 @@ export default function Header({
       {/* Top bar (md+) */}
       <section className="hidden bg-brand-orange-light md:block md:h-14 lg:h-16">
         <div className="flex h-full max-w-full items-center justify-between">
-          <div className="flex h-full items-center justify-between space-x-4 px-4 sm:px-6 lg:px-8">
+          <div className="flex h-full items-center justify-between space-x-4 bg-white px-4 sm:px-6 lg:px-8">
             {/* Logo */}
             <Link href={logoHref}>
               <a className="inline-flex items-center">
                 <span className="sr-only">LAVLI</span>
                 <Image
-                  src="/lavli_logo--wide--coloured--black.svg"
+                  src="/lavli_fig--coloured--black.svg"
                   alt="LAVLI Logo"
-                  width={89}
+                  width={31}
                   height={40}
                 />
               </a>
             </Link>
-            <div className="inline-flex h-full items-center">{slotTitle}</div>
+            <span className="inline-flex h-full items-center leading-none">
+              {slotTitle}
+            </span>
           </div>
 
           {/* Links (md+) */}
@@ -50,28 +51,33 @@ export default function Header({
         <div className="flex h-full max-w-full items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Left */}
           <div className="h-full flex-none">
-            {/* Logo (md-) and mobile menu button (lg-) */}
+            {/* Logo and mobile menu button (md-) */}
             <div className="flex h-full items-center space-x-4 md:space-x-0 lg:hidden">
               <Link href={logoHref}>
                 <a className="inline-flex items-center md:hidden">
                   <span className="sr-only">LAVLI</span>
                   <Image
-                    src="/lavli_logo--wide--coloured--black.svg"
+                    src="/lavli_fig--coloured--black.svg"
                     alt="LAVLI Logo"
-                    width={89}
+                    width={31}
                     height={40}
                   />
                 </a>
               </Link>
+              <button
+                type="button"
+                className="rounded-full p-2 text-dark-medium hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-80 md:hidden"
+                onClick={openMobileMenu}>
+                <span className="sr-only">Menu öffnen</span>
+                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+              </button>
             </div>
 
             {/* Flyout menu (lg+) */}
             <nav
               className="hidden h-full items-center space-x-4 sm:space-x-6 lg:flex lg:space-x-8"
               aria-label="Top">
-              <Popover.Group className="inset-x-0 bottom-0 flex h-full items-center space-x-1">
-                {slotNavPrimary}
-              </Popover.Group>
+              {slotNavPrimary}
             </nav>
           </div>
 
