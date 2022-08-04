@@ -443,7 +443,7 @@ export default function LpLAVLIBusiness() {
         />
         <link
           rel="canonical"
-          href="https://lp.lavli.org/business"
+          href="https://lp.lavli.org/lavli-for-business"
           key="canonical"
         />
       </Head>
