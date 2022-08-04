@@ -31,6 +31,12 @@ So in practice for this changelog, increment the:
 
 ## [Unreleased]
 
+## [1.5.0] – 2022-08-04
+
+### Changed
+
+- Mission and vision statements.
+
 ## [1.4.0] – 2022-06-10
 
 ### Added
