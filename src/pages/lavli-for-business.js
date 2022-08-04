@@ -40,16 +40,15 @@ const values = [
     title: 'LAVLI Mission',
     text: `<p>
             Ein fairer, gemeinschaftsgetragener und innovativer
-            Lebensmittelhandel für eine nachhaltige Lebensmittelversorgung
-            innerhalb planetarer Grenzen.
+            Lebensmittelhandel, der auf Solidarität zwischen Erzeuger:innen und
+            Verbraucher:innen basiert.
           </p>`,
   },
   {
     title: 'LAVLI Vision',
     text: `<p>
-            Eine Gesellschaft, die nachhaltig und respektvoll mit den Ressourcen
-            unseres Planeten umgeht. Eine Gesellschaft, die Landwirtschaft und
-            Lebensmittel wertschätzt.
+            Eine nachhaltige Versorgung mit gesunden Lebensmitteln, die fair
+            produziert wurden. So regional und saisonal wie möglich.
           </p>`,
   },
 ];
