@@ -21,5 +21,6 @@ module.exports = {
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': 'error',
+    'react/no-unknown-property': 'off',
   },
 };
