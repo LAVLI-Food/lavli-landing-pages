@@ -31,6 +31,12 @@ So in practice for this changelog, increment the:
 
 ## [Unreleased]
 
+## [2.0.0] – 2023-02-23
+
+### Removed
+
+- Redirect LAVLI for Business landing page to www.lavli.org.
+
 ## [1.5.0] – 2022-08-04
 
 ### Changed
