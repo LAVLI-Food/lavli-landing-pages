@@ -12,3 +12,14 @@ Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 X-Content-Type-Options = "nosniff"
 Content-Security-Policy = "frame-ancestors 'self'"
 Referrer-Policy = "no-referrer"
+
+
+#
+# Redirect LAVLI for Business to Website
+#
+
+[[redirects]]
+from = "/lavli-for-business/*"
+to = "https://www.lavli.org"
+status = 301
+force = true
